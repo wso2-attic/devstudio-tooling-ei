@@ -1,5 +1,6 @@
 if [ ! -e "eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz" ]; then
     wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz
+fi
 if [ ! -e "eclipse-jee-mars-2-linux-gtk.tar.gz" ]; then
     wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-linux-gtk.tar.gz
 fi
