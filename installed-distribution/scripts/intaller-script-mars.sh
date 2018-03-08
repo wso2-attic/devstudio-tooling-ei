@@ -1,8 +1,18 @@
-wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz
-wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-linux-gtk.tar.gz
-wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-macosx-cocoa-x86_64.tar.gz
-wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-win32-x86_64.zip
-wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-win32.zip
+if [ ! -e "eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz" ]; then
+    wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz
+fi
+if [ ! -e "eclipse-jee-mars-2-linux-gtk.tar.gz" ]; then
+    wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-linux-gtk.tar.gz
+fi
+if [ ! -e "eclipse-jee-mars-2-macosx-cocoa-x86_64.tar.gz" ]; then
+    wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-macosx-cocoa-x86_64.tar.gz
+fi
+if [ ! -e "eclipse-jee-mars-2-win32-x86_64.zip" ]; then
+    wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-win32-x86_64.zip
+fi
+if [ ! -e "eclipse-jee-mars-2-win32.zip" ]; then
+    wget http://product-dist.wso2.com/p2/developer-studio-kernel/eclipse/mars2/eclipse-jee-mars-2-win32.zip
+fi
 mvn install:install-file \
   -DgroupId=org.eclipse \
   -DartifactId=eclipse-jee-mars-2-linux-gtk-x86_64 \

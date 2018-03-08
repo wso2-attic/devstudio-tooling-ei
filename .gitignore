@@ -8,5 +8,13 @@
 *.war
 *.ear
 
+repository/*/target/
+plugins/*/target/
+features/*/target/
+installed-distribution/*/target/
+
+installed-distribution/eclipse-jee-*.tar.gz
+installed-distribution/eclipse-jee-*.zip
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
